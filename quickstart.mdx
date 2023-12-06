@@ -22,15 +22,32 @@ Once testing begins, you’ll be directed to a dashboard.
 
 This dashboard is where you’ll be able to see the progress of the current analysis, and check for any issues Octane has identified.
 
-An Octane run consists of three main parts.
+An Octane run consists of three main parts:
 
-- Vulnerability Detectors
-- Compliance Checks
-- Intelligent Fork Attack Simulations
+<CardGroup cols={3}>
+  <Card
+    title='Vulnerability Detectors'
+    description=''
+    href='detectors/advanced'
+    icon='stars'
+  />
+  <Card
+    title='Compliance Checks'
+    description=''
+    href='compliance/advanced'
+    icon='shield'
+  />
+  <Card
+    title='Attack Simulation'
+    description=''
+    href='attack-simulations/advanced'
+    icon='bolt'
+  />
+</CardGroup>
 
 Once an analysis begins, results will continue to stream in until all solidity smart contracts in the repository are analyzed.
 
-Vulnerability Detectors typically complete after the first few minutes of analysis, while Intelligent Fork Attack Simulations run by default over 1 hour, but can be configured to run longer for even more thorough and niche analysis.
+Vulnerability Detectors typically complete after the first few minutes of analysis, while Attack Simulations on a Mainnet Fork run by default over 1 hour, but can be configured to run longer for even more thorough and niche analysis.
 
 Once found, issues from any engine can be found in the “All Vulnerabilities” tab.
 
@@ -50,10 +67,18 @@ By default, our Code Fix Engine provides an in-depth explanation of the relevant
 
 This engine suggests a draft of a code fix based on its knowledge of the vulnerability and past similar auditor-approved fixes.
 
-Learn more:
-
-Code Fix Engine
-
+<CardGroup cols={1}>
+  <Card
+    title='Code Fix Engine'
+    description=''
+    href='essentials/code-fix'
+    icon='wrench'
+  >
+    Learn more about the Octane Code Fix Engine and how it can help you fix
+    vulnerabilities.
+  </Card>
+</CardGroup>
+<br />
 <Tip>
   <b>Did you know?</b> While it specializes in issues detected by Octane, the
   Code Fix Engine may also be accessed by itself following an audit to suggest
