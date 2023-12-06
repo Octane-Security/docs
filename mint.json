@@ -17,46 +17,78 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Vulnerability Detectors",
+      "url": "detectors"
     }
   ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.octane.security"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://octane.security"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://octane.security/blog"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction", "quickstart"]
+    },
+    {
+      "group": "Advanced",
+      "pages": [
+        "detectors/advanced/rounding",
+        "detectors/advanced/dos",
+        "detectors/advanced/balance-gain",
+        "detectors/advanced/ether-token-leaking",
+        "detectors/advanced/incorrect-token-calc",
+        "detectors/advanced/bad-randomness",
+        "detectors/advanced/token-loss",
+        "detectors/advanced/typographic",
+        "detectors/advanced/unprotected-ext-calls"
+      ]
+    },
+    {
+      "group": "Standard",
+      "pages": [
+        "detectors/standard/reeentrancy",
+        "detectors/standard/block-attrs",
+        "detectors/standard/conflicting-inheritance",
+        "detectors/standard/create2",
+        "detectors/standard/explicit-bal-checks",
+        "detectors/standard/fuzz-delegatecall",
+        "detectors/standard/fuzz-property-violation",
+        "detectors/standard/fuzz-selfdestruct",
+        "detectors/standard/hash-consecutive",
+        "detectors/standard/incorrect-fn-vis",
+        "detectors/standard/keccak",
+        "detectors/standard/assembly",
+        "detectors/standard/overflow-underflow",
+        "detectors/standard/self-destruct",
+        "detectors/standard/tx-origin",
+        "detectors/standard/unchecked-return",
+        "detectors/standard/unicode",
+        "detectors/standard/uninit-storage",
+        "detectors/standard/unsafe-delegatecall"
+      ]
     },
     {
       "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "essentials/when-use",
+        "essentials/what-octane-detects",
+        "essentials/code-fix",
+        "essentials/fuzzing",
+        "essentials/compliance"
       ]
     }
   ],
