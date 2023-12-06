@@ -84,7 +84,7 @@
     {
       "group": "Essentials",
       "pages": [
-        "essentials/when-use",
+        "essentials/when-to-use",
         "essentials/what-octane-detects",
         "essentials/code-fix",
         "essentials/fuzzing",
