@@ -60,7 +60,7 @@
     {
       "group": "Standard",
       "pages": [
-        "detectors/standard/reeentrancy",
+        "detectors/standard/reentrancy",
         "detectors/standard/block-attrs",
         "detectors/standard/conflicting-inheritance",
         "detectors/standard/create2",
