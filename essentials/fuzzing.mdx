@@ -1,4 +1,52 @@
 ---
 title: 'Fork Attack Simulation'
 description: 'Deploy your smart contract against on a forked mainnet, simulating trained attackers to find vulnerabilities in your contracts.'
+icon: 'bolt'
 ---
+
+Octane uses a highly optimized fuzzer to spin up simulated attackers and benign users of your smart contracts, all on a fork of mainnet.
+
+No setup is necessary. Every time you start an analysis on Octane (which can also be triggered by Github actions, including spinning up on every new pull request), this fork will spin up automatically. Octane supports projects built with Foundry and Truffle. As long as your smart contracts compile properly, Octane will take care of spinning up this simulation environment and properly equipping the simulated attackers to best find niche issues in your smart contracts.
+
+By default, Octane will notify you when high-level adversarial conditions are met, including if an attacker is able to steal a benign user’s funds, if an attacker is able to steal significant contract funds, etc.
+
+Octane also supports adding custom invariants and ‘tripwire conditions’ that can be used as objectives for simulated attackers.
+
+### Default Simulated Attacker Objectives
+
+<CardGroup cols={2}>
+  <Card
+    title='Stealing User Funds'
+    href='../detectors/advanced/balance-gain'
+  >
+    Whether native currency or specific ERC20 tokens
+  </Card>
+  <Card
+    title='Stealing Contract Funds'
+    href='../detectors/advanced/token-loss'
+  >
+    Draining significant funds from deployed contracts
+  </Card>
+  <Card title='Reentrancy' href='../detectors/standard/reentrancy'>
+    Reentrancy attacks, particulary with negative outcomes
+  </Card>
+  <Card
+    title='Self-Destruct'
+    href='../detectors/standard/fuzz-selfdestruct'
+  >
+    Self-destruct accesses from unprivileged users
+  </Card>
+  <Card
+    title='Controlled Delegatecall'
+    href='../detectors/standard/fuzz-delegatecall'
+    >
+    Delegatecall access from unprivileged users
+    </Card>
+    <Card
+    title='Property Violations'
+    href='../detectors/standard/fuzz-property-violation'
+    >
+    Violations of user-specified properties
+    </Card>
+
+</CardGroup>

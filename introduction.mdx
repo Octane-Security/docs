@@ -9,18 +9,39 @@ icon: 'globe'
 Octane's detectors search for issues in your source code. We use cutting-edge machine learning to find vulnerabilities, filtering out the noise and showing you the niche issues that really matter.
 
 <CardGroup cols={2}>
-  <Card
-    title='Advanced Detectors'
-    icon='stars'
-    href='https://docs.octane.security/detectors/advanced/'
-  >
+  <Card title='Advanced Detectors' icon='stars' href='detectors/advanced/'>
     Learn about Octane's advanced detectors
   </Card>
-  <Card
-    title='Standard Detectors'
-    icon='code'
-    href='https://docs.octane.security/detectors/standard'
-  >
+  <Card title='Standard Detectors' icon='code' href='detectors/standard'>
     Learn about Octane's standard detectors
+  </Card>
+</CardGroup>
+
+## Code Fix Engine
+
+Octane's Code Fix Engine is built from the ground up to fix vulnerabilities in Solidity smart contracts. Once an issue is identified, Octane's Code Fix engine spins up automatically to draft a fix. This can massively cut down on the time it takes to fix a vulnerability, and can even be used to fix vulnerabilities, whether identified by Octane or human auditors.
+
+<CardGroup cols={1}>
+  <Card title='Code Fix Engine' icon='wrench' href='essentials/code-fix'>
+    Learn about Octane's Code Fix Engine
+  </Card>
+</CardGroup>
+## Compliance Engine
+
+Understanding how your smart contracts stack up to industry security best practices is vitally important, especially as smart contracts become more complex and the specter of regulation looms. Octane's Compliance Engine lets you measure how your smart contracts stack up to the EthTrust standard, showing what you need to fix, and even suggesting these fixes in order to get compliant.
+
+<CardGroup cols={1}>
+  <Card title='Compliance Engine' icon='shield' href='essentials/compliance'>
+    Learn about Octane's Compliance Engine
+  </Card>
+</CardGroup>
+
+## Fork Attack Simulation
+
+Octane uses a highly optimized fuzzer to spin up simulated attackers and benign users of your smart contracts, all on a fork of mainnet. No setup necessary, attackers use a set of standard objectives, and can be supercharged with platform-specific invariants/objectives.
+
+<CardGroup cols={1}>
+  <Card title='Fork Attack Simulation' icon='shield' href='essentials/fuzzing'>
+    Learn about Octane's Fork Attack Simulation environment
   </Card>
 </CardGroup>
