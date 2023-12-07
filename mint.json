@@ -58,6 +58,14 @@
       ]
     },
     {
+      "group": "Experimental",
+      "pages": [
+        "detectors/experimental/invalid-state-manipulation",
+        "detectors/experimental/slippage-param-missing-or-ineffective",
+        "detectors/experimental/stale-price-risk"
+      ]
+    },
+    {
       "group": "Standard",
       "pages": [
         "detectors/standard/reentrancy",
