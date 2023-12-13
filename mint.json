@@ -61,8 +61,18 @@
     {
       "group": "Experimental",
       "pages": [
-        "detectors/experimental/invalid-state-manipulation",
+        "detectors/experimental/gas-limit-manipulation-1-64-rule",
+        "detectors/experimental/missing-or-improper-admin-address-check",
+        "detectors/experimental/validation-check-does-not-fall-through",
+        "detectors/experimental/incorrect-nonce-sig-replay-attack",
+        "detectors/experimental/oracle-data-check",
+        "detectors/experimental/oversupply-by-repayment-without-burn",
+        "detectors/experimental/writing-to-memory-but-not-storage",
+        "detectors/experimental/incorrectly-payable",
+        "detectors/experimental/oracle-heartbeat",
         "detectors/experimental/slippage-param-missing-or-ineffective",
+        "detectors/experimental/invalid-state-manipulation",
+        "detectors/experimental/oracle-l2-sequencer",
         "detectors/experimental/stale-price-risk"
       ]
     },
