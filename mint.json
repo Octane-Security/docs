@@ -8,13 +8,13 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0E0E0E",
+    "primary": "#F0F0F0",
     "light": "#4A76E9",
-    "dark": "#0E0E0E"
+    "dark": "#2D2B2A"
   },
   "topbarCtaButton": {
-    "name": "Join the Waitlist",
-    "url": "https://airtable.com/appBjGcVeDKzZJhsn/shrtTaHW5TbENDpTF"
+    "name": "Schedule a demo",
+    "url": "https://octane.security/schedule-demo"
   },
   "tabs": [
     {
