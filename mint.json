@@ -24,19 +24,9 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.octane.security"
-    },
-    {
       "name": "Website",
       "icon": "globe",
       "url": "https://octane.security"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://octane.security/blog"
     }
   ],
   "navigation": [
@@ -105,8 +95,7 @@
       "pages": [
         "essentials/when-to-use",
         "essentials/what-octane-detects",
-        "essentials/code-fix",
-        "essentials/compliance"
+        "essentials/code-fix"
       ]
     }
   ],
