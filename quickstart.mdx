@@ -1,7 +1,7 @@
 ---
-title: 'Quickstart'
-description: 'Start finding vulnerabilities in less than 5 minutes.'
-icon: 'rocket'
+title: "Quickstart"
+description: "Start finding vulnerabilities in less than 5 minutes."
+icon: "rocket"
 ---
 
 ## Choosing a repository
@@ -11,9 +11,7 @@ Head to https://app.octane.security and select ‘Sign in with GitHub’.
 From there, you’ll be asked to select a repository to test.
 
 <Tip>
-
-If you’re having issues with GitHub authentication, reach out to nathan@octane.security to be added to the whitelist. Only approved accounts are able to access Octane.
-
+  If you’re having issues with GitHub authentication, reach out to [gio@octane.security](mailto:nathan@octane.security) to be added to the whitelist. Only approved accounts are able to access Octane.
 </Tip>
 
 ## Analysis
@@ -24,25 +22,16 @@ This dashboard is where you’ll be able to see the progress of the current anal
 
 An Octane run consists of three main parts:
 
-<CardGroup cols={3}>
-  <Card
-    title='Vulnerability Detectors'
-    description=''
-    href='detectors/advanced'
-    icon='stars'
-  />
-  <Card
-    title='Compliance Checks'
-    description=''
-    href='compliance/advanced'
-    icon='shield'
-  />
-  <Card
-    title='Attack Simulation'
-    description=''
-    href='attack-simulations/advanced'
-    icon='bolt'
-  />
+<CardGroup cols="3">
+  <Card title="Vulnerability Detectors" icon="stars" href="detectors/advanced">
+    
+  </Card>
+  <Card title="Compliance Checks" icon="shield" href="compliance/advanced">
+    
+  </Card>
+  <Card title="Attack Simulation" icon="bolt" href="attack-simulations/advanced">
+    
+  </Card>
 </CardGroup>
 
 Once an analysis begins, results will continue to stream in until all solidity smart contracts in the repository are analyzed.
@@ -53,36 +42,24 @@ Once found, issues from any engine can be found in the “All Vulnerabilities”
 
 ## Interpreting a Vulnerability Finding
 
-Each identified vulnerability has 7 main parts:
+Each identified vulnerability has 6 main parts:
 
 1. Vulnerability type
 2. General vulnerability description
 3. Source code link
-4. Confidence
-5. Severity
-6. Detailed explanation of how the vulnerability exists in your code
-7. Detailed fix suggestion (powered by the Code Fix Engine)
+4. Severity
+5. Detailed explanation of how the vulnerability exists in your code
+6. Detailed fix suggestion (powered by the Code Fix Engine)
 
 By default, our Code Fix Engine provides an in-depth explanation of the relevant vulnerability.
 
 This engine suggests a draft of a code fix based on its knowledge of the vulnerability and past similar auditor-approved fixes.
 
-<CardGroup cols={1}>
-  <Card
-    title='Code Fix Engine'
-    description=''
-    href='essentials/code-fix'
-    icon='wrench'
-  >
+<CardGroup cols="1">
+  <Card title="Code Fix Engine" icon="wrench" href="essentials/code-fix">
     Learn more about the Octane Code Fix Engine and how it can help you fix
     vulnerabilities.
   </Card>
 </CardGroup>
+
 <br />
-<Tip>
-  <b>Did you know?</b> While it specializes in issues detected by Octane, the
-  Code Fix Engine may also be accessed by itself following an audit to suggest
-  fixes for each of the auditor-identified issues. <br />
-  This can massively cut down on the cost and time needed to send back code to auditors
-  for reevaluation.
-</Tip>
