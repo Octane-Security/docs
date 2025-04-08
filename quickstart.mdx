@@ -25,22 +25,22 @@ This dashboard is where you’ll be able to see the progress of the current anal
 An Octane run consists of three main parts:
 
 <CardGroup cols="3">
-  <Card title="Vulnerability Detectors" icon="stars" href="detectors/advanced">
+  <Card title="Standard Detectors" icon="stars" href="detectors/standard">
     
   </Card>
-  <Card title="Compliance Checks" icon="shield" href="compliance/advanced">
+  <Card title="Advanced Detectors" icon="shield" href="detectors/advanced">
     
   </Card>
-  <Card title="Attack Simulation" icon="bolt" href="attack-simulations/advanced">
+  <Card title="Experiment Detectors" icon="bolt" href="detectors/experimental">
     
   </Card>
 </CardGroup>
 
 Once an analysis begins, results will continue to stream in until all solidity smart contracts in the repository are analyzed.
 
-Vulnerability Detectors typically complete after the first few minutes of analysis, while Attack Simulations on a Mainnet Fork run by default over 1 hour, but can be configured to run longer for even more thorough and niche analysis.
+Vulnerability Detectors typically complete in 1-10 minutes depending on the number of code paths in the AST.
 
-Once found, issues from any engine can be found in the “All Vulnerabilities” tab.
+Once found, issues from any engine will be surfaced in the “Vulnerabilities” tab.
 
 ## Interpreting a Vulnerability Finding
 
@@ -56,12 +56,5 @@ Each identified vulnerability has 6 main parts:
 By default, our Code Fix Engine provides an in-depth explanation of the relevant vulnerability.
 
 This engine suggests a draft of a code fix based on its knowledge of the vulnerability and past similar auditor-approved fixes.
-
-<CardGroup cols="1">
-  <Card title="Code Fix Engine" icon="wrench" href="essentials/code-fix">
-    Learn more about the Octane Code Fix Engine and how it can help you fix
-    vulnerabilities.
-  </Card>
-</CardGroup>
 
 <br />
