@@ -9,7 +9,7 @@
   "favicon": "/favicon.png",
   "colors": {
     "primary": "#0E0E0E",
-    "light": "#FAFAFA",
+    "light": "#4A76E9",
     "dark": "#0E0E0E"
   },
   "topbarCtaButton": {
